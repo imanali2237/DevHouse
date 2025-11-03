@@ -11,7 +11,7 @@ DevHouse is a comprehensive developer collaboration platform combining the best 
 ### 🎯 Core Features
 
 - **🔐 Advanced Authentication & Authorization** - JWT-based auth with roles & permissions
-- **🏢 Multi-Organization Support** - Teams, projects, and hierarchical access control  
+- **🏢 Multi-Organization Support** - Teams, projects, and hierarchical access control
 - **📋 Project & Task Management** - Full CRUD with comments, labels, and attachments
 - **📁 File Management** - Upload handling with S3/local storage support
 - **🔔 Real-time Notifications** - Email and in-app notification system
@@ -22,32 +22,34 @@ DevHouse is a comprehensive developer collaboration platform combining the best 
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|----------|------------|
-| **Framework** | NestJS |
-| **Language** | TypeScript |
-| **Database** | PostgreSQL |
-| **ORM** | Prisma |
-| **Caching** | Redis |
-| **Authentication** | JWT + Passport |
-| **Validation** | class-validator + class-transformer |
-| **API Documentation** | Swagger/OpenAPI |
-| **Testing** | Jest + Supertest |
-| **Queue System** | BullMQ |
-| **File Storage** | AWS S3 / Local Storage |
-| **Containerization** | Docker + Docker Compose |
+| Category              | Technology                          |
+| --------------------- | ----------------------------------- |
+| **Framework**         | NestJS                              |
+| **Language**          | TypeScript                          |
+| **Database**          | PostgreSQL                          |
+| **ORM**               | Prisma                              |
+| **Caching**           | Redis                               |
+| **Authentication**    | JWT + Passport                      |
+| **Validation**        | class-validator + class-transformer |
+| **API Documentation** | Swagger/OpenAPI                     |
+| **Testing**           | Jest + Supertest                    |
+| **Queue System**      | BullMQ                              |
+| **File Storage**      | AWS S3 / Local Storage              |
+| **Containerization**  | Docker + Docker Compose             |
 
 ## 🏗️ Architecture Highlights
 
 This project demonstrates enterprise-level backend concepts:
 
 ### 🎨 **Clean Architecture**
+
 - **Layered Design**: Controller → Service → Repository
 - **Dependency Injection**: Proper IoC container usage
 - **SOLID Principles**: Maintainable and testable code structure
 - **Modular Monolith**: Microservice-ready architecture
 
 ### 🔒 **Security First**
+
 - OWASP compliance
 - JWT with refresh tokens
 - Role-based access control (RBAC)
@@ -55,6 +57,7 @@ This project demonstrates enterprise-level backend concepts:
 - Rate limiting and CORS policies
 
 ### ⚡ **Performance & Scalability**
+
 - Redis caching strategies
 - Database query optimization
 - Connection pooling
@@ -62,6 +65,7 @@ This project demonstrates enterprise-level backend concepts:
 - Horizontal scaling readiness
 
 ### 🧪 **Testing Strategy**
+
 - Unit testing with mocked dependencies
 - Integration testing with test databases
 - E2E API testing
@@ -88,6 +92,7 @@ src/
 ## 🚦 Getting Started
 
 ### Prerequisites
+
 - Node.js 18+
 - PostgreSQL 13+
 - Redis 6+
@@ -130,24 +135,28 @@ docker-compose exec api npx prisma migrate deploy
 This project is structured to teach advanced backend concepts progressively:
 
 ### 🌟 **Phase 1: Foundation (Weeks 1-2)**
+
 - NestJS project setup with proper folder structure
 - PostgreSQL + Prisma integration
 - JWT authentication with role-based access
 - Global exception handling and validation
 
 ### 🔧 **Phase 2: Core Features (Weeks 3-5)**
+
 - Organization and project management modules
 - File upload with S3 integration
 - Redis caching and performance optimization
 - Custom decorators, pipes, and guards
 
 ### ⚡ **Phase 3: Advanced Concepts (Weeks 6-8)**
+
 - Background job processing with BullMQ
 - Email notification system
 - Comprehensive testing suite
 - Docker containerization and CI/CD
 
 ### 🚀 **Phase 4: Production Ready (Week 9+)**
+
 - Monitoring and observability
 - Security hardening
 - Performance optimization
@@ -156,6 +165,7 @@ This project is structured to teach advanced backend concepts progressively:
 ## 🧪 API Documentation
 
 Once the server is running, visit:
+
 - **Swagger UI**: `http://localhost:3000/api/docs`
 - **Health Check**: `http://localhost:3000/health`
 
@@ -170,6 +180,7 @@ We welcome contributions that help improve the codebase and demonstrate best pra
 5. Open a Pull Request
 
 ### Development Guidelines
+
 - Follow TypeScript and ESLint configurations
 - Write tests for new features
 - Update documentation for API changes
